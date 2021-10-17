@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "roll_dice_details" {
   filename      = "roll_dice_details.zip"
-  function_name = "RollDiceDetails_1"
+  function_name = "RollDiceDetails"
   role          = "${aws_iam_role.iam_for_lambda.arn}"
   #filename is lambda
   #function_name is lambda_handler
@@ -15,7 +15,7 @@ resource "aws_lambda_function" "roll_dice_details" {
 
 resource "aws_lambda_function" "roll_dice_insert" {
   filename      = "roll_dice_insert.zip"
-  function_name = "RollDiceSumInsert_1"
+  function_name = "RollDiceSumInsert"
   role          = "${aws_iam_role.iam_for_lambda.arn}"
   #filename is lambda
   #function_name is lambda_handler

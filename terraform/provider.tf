@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "us-east-1"
-  access_key = "<<ACCESS_KEY>>"
-  secret_key = "<<SECRET_KEY>>"
+  region = var.aws_region
+  profile = "iamadmin-general"
+  shared_credentials_file = "~/.aws/credentials"
+  # Linux:::  $HOME/.aws/credentials
+  # windows::: %USERPROFILE%\.aws\credentials
 }

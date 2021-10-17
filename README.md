@@ -1,7 +1,7 @@
 # Blaze-Roll-Dice-Simulator
 
 # High Level Architecture
-![High Level Architecture Image](high_level_architecture.png)
+![High Level Architecture Image](roll_dice_archirecture.png)
 
 # Resources
 1. AWS (API Gateway(REST API), Lambda Function, DynamoDB, IAM Role)
