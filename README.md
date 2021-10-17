@@ -1,6 +1,6 @@
-# Blaze-Roll-Dice-Simulator
+# Roll-Dice-Simulation
 
-# High Level Architecture
+# Design Architecture
 ![High Level Architecture Image](roll_dice_archirecture.png)
 
 # Resources
