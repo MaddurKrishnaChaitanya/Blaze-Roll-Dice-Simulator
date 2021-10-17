@@ -6,6 +6,7 @@
 # Resources
 1. AWS (API Gateway(REST API), Lambda Function, DynamoDB, IAM Role)
 2. Terraform
+3. Boto3 
 
 # AWS
 1. created DynamoDb named ROLL_DICE_SIMULATION
