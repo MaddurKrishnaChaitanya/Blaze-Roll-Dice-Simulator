@@ -16,6 +16,7 @@ def lambda_handler(event, context):
     logger.setLevel(logging.INFO)
     if event["queryStringParameters"]:
         listIteams = []
+        result = {}
         total_rolls = 0
         noofdice = int(event["queryStringParameters"]['noofdice'])
         sidesofdice = int(event["queryStringParameters"]['sidesofdice'])
@@ -26,7 +27,8 @@ def lambda_handler(event, context):
         for item in givencombination['Items']:
             listIteams.append(item['total_roll_times'])
             total_rolls += item['totalrolls']
-        result = {key: int(sum(e[key] for e in listIteams)) for key in listIteams[0].keys()}
+        if len(listIteams) > 0:
+            result = {key: int(sum(e[key] for e in listIteams)) for key in listIteams[0].keys()}
         relative_distribution = {}
         for key, value in result.items():
             relative_distribution[key] = str(round(((value / total_rolls) * 100), 2)) + '%'

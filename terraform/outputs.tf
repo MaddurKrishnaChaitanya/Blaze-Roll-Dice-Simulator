@@ -7,11 +7,11 @@ output "apigwt_base_url" {
 }
 
 output "apigwt_rolldice_insert_url" {
-  value = "${aws_api_gateway_deployment.rolldicesimulation_deploy.invoke_url}/${aws_api_gateway_stage.develop.stage_name}${aws_api_gateway_resource.rolldice_insert_resource.path_part}"
+  value = "${aws_api_gateway_deployment.rolldicesimulation_deploy.invoke_url}${aws_api_gateway_stage.develop.stage_name}/${aws_api_gateway_resource.rolldice_insert_resource.path_part}"
 }
 
 output "apigwt_rolldice_details_url" {
-  value = "${aws_api_gateway_deployment.rolldicesimulation_deploy.invoke_url}/${aws_api_gateway_stage.develop.stage_name}${aws_api_gateway_resource.rolldice_details_resource.path_part}"
+  value = "${aws_api_gateway_deployment.rolldicesimulation_deploy.invoke_url}${aws_api_gateway_stage.develop.stage_name}/${aws_api_gateway_resource.rolldice_insert_resource.path_part}/${aws_api_gateway_resource.rolldice_details_resource.path_part}"
 }
 
 #output "lambdafunction-details" {
