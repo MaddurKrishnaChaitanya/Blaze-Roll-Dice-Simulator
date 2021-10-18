@@ -30,3 +30,18 @@
 2. Using Authentication(API Keys or Token based) and Authorization(Policies) we can secure our API.
 3. Using CloudWatch or any third party tools like Prometheus we can monitor our lambda functions
 4. using automated CI/CD pipeline with different stages and steps like build, code review and e.t.c we will test quality of the API  
+
+# DEMO URLS TO TEST(API Deployed at develop stage)
+ 
+ Case1: 
+ Simulation Total Insert
+ https://jp23513onj.execute-api.us-east-1.amazonaws.com/develop/rolldice?noofdice=1&sidesofdice=6&totalrolls=200
+ 
+ Case2:
+ get relative distribution by dice no- dice side combination
+ https://jp23513onj.execute-api.us-east-1.amazonaws.com/develop/rolldice/details?noofdice=1&sidesofdice=6
+ 
+ get total simulation and total rolls group by all dice no- dice side combination
+ https://jp23513onj.execute-api.us-east-1.amazonaws.com/develop/rolldice/details
+ 
+ 
