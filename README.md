@@ -7,7 +7,8 @@
 1. monitor lambda functions using CloudWatch Logs/Metrics
 2. need to create resource for API Gateway in Terraform
 3. need to make application code modularized by environment wise ex: sit,uat,prod..
-4. 
+
+
 # Pre-Requisites
 1. Git
 2. Python
